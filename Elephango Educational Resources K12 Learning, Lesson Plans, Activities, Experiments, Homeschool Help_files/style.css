@@ -2226,6 +2226,7 @@ margin:0 0 2px 2px;
 .students-nav .nav-link {
     color: #000;
     margin-bottom: -3px;
+    font-weight: bold;
 }
 .students-nav .nav-link.active {
     background: #faddab;
