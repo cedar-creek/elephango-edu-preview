@@ -1,0 +1,169 @@
+// chkToggle ( [ OBJECT tg_form, STRING elemName ] )
+// chkToggle ( self.document.frmMailList, 'chkMsgID')
+function chkBoxToggle()
+  {
+   if ( chkBoxToggle.arguments.length >= 1 )
+      { var tg_form = chkBoxToggle.arguments[0]; }
+   else
+      { var tg_form = document.forms[0]; }
+
+   for ( var i=0; i<tg_form.elements.length; i++ )
+       {
+        var elem = tg_form.elements[i];
+        if ( elem.type != "checkbox" ) { continue; }
+        if ( chkBoxToggle.arguments.length >= 2 )
+           {
+            var elemName = chkBoxToggle.arguments[1];
+            if ( elem.name == elemName )
+               {
+                if ( elem.checked ) { elem.checked = false; }
+                else { elem.checked = true; }
+               }
+           }
+        else
+           {
+            if ( elem.checked ) { elem.checked = false; }
+            else { elem.checked = true; }
+           }
+       }
+  }
+
+function pageAction ( pageNo )
+{
+    var docForm = document.frmList;
+    //docForm.startRow.value = pageNo; 
+	alert("#PATH_INFO#");
+	docForm.action = "#PATH_INFO#?startrow=" + pageNo;
+	docForm.submit();
+}
+
+// chkBoxAll ( BOOLEAN chk [, OBJECT tg_form, STRING elemName ] )
+// chkBoxAll( true, self.document.frmMailList, 'chkMsgID')
+function chkBoxAll ( chk )
+  {
+   if ( chkBoxAll.arguments.length >= 2 )
+      { var tg_form = chkBoxAll.arguments[1]; }
+   else
+      { var tg_form = document.forms[0]; }
+
+   for ( var i=0; i<tg_form.elements.length; i++ )
+       {
+        var elem = tg_form.elements[i];
+        if ( elem.type != "checkbox" ) { continue; }
+        if ( chkBoxAll.arguments.length >= 3 )
+           {
+            var elemName = chkBoxAll.arguments[2];
+            if ( elem.name == elemName ) { elem.checked = chk; }
+           }
+        else
+           { elem.checked = chk; }
+       }
+  }
+
+
+
+// chkBoxCount ( [ OBJECT tg_form, STRING elemName ] )
+// chkBoxCount ( self.document.frmMailList, 'chkMsgID')
+function chkBoxCount()
+  {
+   var chkCount = 0;
+
+   if ( chkBoxCount.arguments.length >= 1 )
+      { var tg_form = chkBoxCount.arguments[0]; }
+   else
+      { var tg_form = document.forms[0]; }
+
+   for ( var i=0; i<tg_form.elements.length; i++ )
+       {
+        var elem = tg_form.elements[i];
+        if ( elem.type != "checkbox" ) { continue; }
+
+        if ( chkBoxCount.arguments.length >= 2 )
+           {
+            var elemName = chkBoxCount.arguments[1];
+            if ( elem.name == elemName )
+               { if ( elem.checked ) { chkCount += 1; } }
+           }
+        else
+           { if ( elem.checked ) { chkCount += 1; } }
+       }
+
+   return chkCount;
+  }
+
+
+
+// chkBoxValue ( [ OBJECT tg_form, STRING elemName ] )
+// chkBoxValue ( self.document.frmMailList, 'chkMsgID')
+function chkBoxValue()
+  {
+   var chkValue = "";
+
+   if ( chkBoxValue.arguments.length >= 1 )
+      { var tg_form = chkBoxValue.arguments[0]; }
+   else
+      { var tg_form = document.forms[0]; }
+
+   for ( var i=0; i<tg_form.elements.length; i++ )
+       {
+        var elem = tg_form.elements[i];
+        if ( elem.type != "checkbox" ) { continue; }
+        if ( chkBoxValue.arguments.length >= 2 )
+           {
+            var elemName = chkBoxValue.arguments[1];
+            if ( elem.name == elemName )
+               {
+                if ( elem.checked )
+                   { chkValue = (chkValue==null || chkValue.length==0 || chkValue=="")? elem.value:chkValue+","+elem.value; }
+               }
+           }
+        else
+           {
+            if ( elem.checked )
+               { chkValue = (chkValue==null || chkValue.length==0 || chkValue=="")? elem.value:chkValue+","+elem.value; }
+           }
+       }
+
+   return chkValue;
+  }
+
+
+
+// radioChecked ( [ OBJECT radioObj ] ) returns true/false
+function radioChecked (radioObj)
+  {
+   for ( var i=0; i<radioObj.length; i++ )
+       {
+        if ( radioObj[i].checked )
+           { return true; break; }
+       }
+
+   return false;
+  }
+  
+  // radioValue ( [ OBJECT radioObj ] ) returns value
+  // if not checked then return value 0
+function radioValue (radioObj)
+  {
+   var value = null
+   for ( var i=0; i<radioObj.length; i++ )
+       {
+        if ( radioObj[i].checked )
+           { return value = radioObj[i].value }
+       }
+   return 0;
+  }
+
+// return selected radio button value
+function radioCheckedVal (radioObj)
+  {
+   for ( var i=0; i<radioObj.length; i++ )
+       {
+        if ( radioObj[i].checked )
+           { 
+            return radioObj[i].value            
+            break; 
+            }
+       }
+  }
+
