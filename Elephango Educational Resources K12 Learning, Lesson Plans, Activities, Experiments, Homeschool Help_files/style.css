@@ -2294,3 +2294,13 @@ margin:0 0 2px 2px;
 .educator-table .child td:first-child div {
     padding-left: 3rem;
 }
+.educator-table [aria-expanded="false"] i:before {
+    content: "\f054";
+    color: #a8b3ba;
+    font-size: 0.9rem;
+}
+.educator-table [aria-expanded="true"] i:before {
+    content: "\f078";
+    color: #a8b3ba;
+    font-size: 0.9rem;
+}
