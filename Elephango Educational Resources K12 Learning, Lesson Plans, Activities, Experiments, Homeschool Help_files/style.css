@@ -1706,6 +1706,7 @@ body {
     -webkit-border-radius: 5px;
     -khtml-border-radius: 5px;
     border-radius: 5px;
+    font-weight: bold;
 	
 	}
 .darkorangebuttonLink:hover{BACKGROUND-COLOR:#F27713;color:white;}
@@ -2249,7 +2250,7 @@ margin:0 0 2px 2px;
 }
 .row-title {
     color: #b4b7be;
-    font-size: 0.9rem;
+    font-size: 12px;
 }
 .row-icon {
     color: #212529;
@@ -2278,6 +2279,7 @@ margin:0 0 2px 2px;
     padding: 7px 15px;
     border-radius: 5px;
     display: inline-block;
+    font-weight:bold;
 }
 .class-code {
     background: #d9edce;
@@ -2298,9 +2300,27 @@ margin:0 0 2px 2px;
     content: "\f054";
     color: #a8b3ba;
     font-size: 0.9rem;
+    padding-right: 7px;
 }
 .educator-table [aria-expanded="true"] i:before {
     content: "\f078";
     color: #a8b3ba;
     font-size: 0.9rem;
+    padding-right: 7px;
+}
+.box-gray {
+    background-color: #F9F9F9;
+     padding: 20px 15px 30px 15px;
+}
+.font-size-15 {
+    font-size: 15px;
+}
+.font-size-24 {
+    font-size: 24px;
+}
+.font-weight-bold {
+    font-weight: bold;
+}
+.font-weight-normal {
+    font-weight: normal;
 }
