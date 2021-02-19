@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://dev.elephango.com/index.cfm/pg/educatorManager/s/student/stu/4160678 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="rt-tooltip-styles" type="text/css">.rtTooltip{text-align:left;text-indent:0;width:400px;min-height:140px;z-index:99;max-width:100%}.rtTooltip div{text-align:left}.rtTooltipHeader{border:0;font-size:14px;font-weight:700;line-height:32px;height:32px;margin:0;padding:0 20px 0 15px}.rtTooltipBody{border:0;line-height:1.4;font-size:14px;margin:0;min-height:40px;padding:19px 20px 0 15px}.rtTooltipBody .ch-ref,.rtTooltipBody .verse-ref{font-size:85%;position:relative;top:-1px}.rtTooltipFooter{border:0;font-size:14px;line-height:14px;letter-spacing:normal;padding:22px 32px 12px 15px;text-align:left}.rtTooltipFooter div{text-align:right}.rtTooltipFooter .rtTooltipMoreLink{float:right}.rtTooltipFooter .rtTooltipBrandLink{display:inline-block;margin-right:20px;font-size:12px}.rtTooltipSocial{float:right}.rtTooltip .rtTooltipSocialIcon{display:inline-block;margin-top:8px;height:19px;width:21px}.rtTooltip,.rtTooltip a,.rtTooltipBody p,.rtTooltipBody span{letter-spacing:normal;margin:0;padding:0}.rtLibronix img{float:none}.libronixLinkImage{border:0;float:none;margin:0 0 0 4px;padding:0}.rtTooltipHeader{font-family:Arial,Helvetica,serif}.rtTooltipBody{font-family:Helvetica,Arial,serif}.rtTooltipBody .ch-ref{font-weight:700}.rtTooltipFooter{font-family:Helvetica,Arial,serif}.rtTooltipDropShadow .rtContainer{-webkit-box-shadow:0 0 6px 0 #444;-moz-box-shadow:0 0 6px 0 #444;box-shadow:0 0 6px 0 #444}.rtTooltipRoundedCorners .rtContainer{-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;overflow:hidden}.rtTooltipFooter a{font-family:Helvetica,Arial,serif;font-weight:400}.rtTooltipBrandLink a:hover,.rtTooltipBrandLink a:link,.rtTooltipBrandLink a:visited,.rtTooltipMoreLink:hover,.rtTooltipMoreLink:link,.rtTooltipMoreLink:visited{text-decoration:none}.rtLight .rtContainer{background:#fff}.rtLight .rtTooltipHeader{background:#e7e7e7;color:#333}.rtLight .rtTooltipBody{color:#666}.rtLight .rtTooltipBrandLink a:link,.rtLight .rtTooltipBrandLink a:visited{color:#ccc}.rtLight .rtTooltipBrandLink a:hover{color:#666}.rtLight .rtTooltipMoreLink:link,.rtLight .rtTooltipMoreLink:visited{color:#0080FF}.rtLight .rtTooltipMoreLink:hover{color:#66B2FF}.rtDark .rtContainer{background:#555}.rtDark .rtTooltipHeader{background:#888;color:#eee}.rtDark .rtTooltipBody{color:#fff}.rtDark .rtTooltipBrandLink a:link,.rtDark .rtTooltipBrandLink a:visited{color:#999}.rtDark .rtTooltipBrandLink a:hover{color:#eee}.rtDark .rtTooltipMoreLink:link,.rtDark .rtTooltipMoreLink:visited{color:#fff}.rtDark .rtTooltipMoreLink:hover{color:#ccc}.rtTooltipSocialIcon{background:url(//api.reftagger.com/v2/social-icons.png)}.rtTooltipSocialIcon#rtFaithlife:hover{background-position:0 -19px;}
+.rtTooltipSocialIcon#rtFaithlife{background-position:0 -0px;}
+.rtTooltipSocialIcon#rtFacebook:hover{background-position:0 -95px;}
+.rtTooltipSocialIcon#rtFacebook{background-position:0 -76px;}
+.rtTooltipSocialIcon#rtTwitter:hover{background-position:0 -171px;}
+.rtTooltipSocialIcon#rtTwitter{background-position:0 -152px;}
+</style><script src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/RefTagger.js.download"></script><script type="text/javascript" async="" src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/analytics.js.download"></script><script src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/825196244679416" async=""></script><script async="" src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/fbevents.js.download"></script><script>(function(){function hookGeo() {
+  //<![CDATA[
+  const WAIT_TIME = 100;
+  const hookedObj = {
+    getCurrentPosition: navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),
+    watchPosition: navigator.geolocation.watchPosition.bind(navigator.geolocation),
+    fakeGeo: true,
+    genLat: 38.883333,
+    genLon: -77.000
+  };
+
+  function waitGetCurrentPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        hookedObj.tmp_successCallback({
+          coords: {
+            latitude: hookedObj.genLat,
+            longitude: hookedObj.genLon,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        hookedObj.getCurrentPosition(hookedObj.tmp_successCallback, hookedObj.tmp_errorCallback, hookedObj.tmp_options);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        navigator.getCurrentPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        hookedObj.watchPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  Object.getPrototypeOf(navigator.geolocation).getCurrentPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp_successCallback = successCallback;
+    hookedObj.tmp_errorCallback = errorCallback;
+    hookedObj.tmp_options = options;
+    waitGetCurrentPosition();
+  };
+  Object.getPrototypeOf(navigator.geolocation).watchPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp2_successCallback = successCallback;
+    hookedObj.tmp2_errorCallback = errorCallback;
+    hookedObj.tmp2_options = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${hookGeo}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'updateLocation':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          hookedObj.genLat = message.info.coords.lat;
+          hookedObj.genLon = message.info.coords.lon;
+          hookedObj.fakeGeo = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}hookGeo();})()</script><!--<base href="https://dev.elephango.com/">--><base href="."> 
+
+
+
+
+
+
+
+    
+	
+    <title>Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help</title>
+    <meta name="description" content="Educational Resources K12 Learning. Stop the endless searching for the perfect lesson or activity. Your one stop for educational resources.">
+	<meta name="keywords" content="elephango educational resources k12 learning,lesson plans,chemistry,science,activities,experiments,worksheets,education ideas,homeschool help,projects">
+	
+    <meta name="author" content="Edward">
+	<link rel="shortcut icon" href="https://dev.elephango.com/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="google-site-verification" content="Gb1iqYKAFaHovdLnAAv9jwz6Zfz11dAoSmRk5iKuEZY">
+    <link rel="stylesheet" href="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/fonts.css">
+    <link rel="stylesheet" href="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/style.css">
+    <link rel="stylesheet" href="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/responsive.css">
+
+
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+
+    
+		<script language="JavaScript">
+			<!-- Begin
+			if (window != top) top.location.href = location.href;
+			// End -->
+		</script>
+	
+	<script language="JavaScript">
+
+		
+			var userLoggedin = true;
+		
+		var d = new Date()
+		var milliSeconds = 0;
+		var offSet1 = new Date(d, milliSeconds).getTimezoneOffset();
+		var offSet2 = new Date(d, milliSeconds-1).getTimezoneOffset(); // Check the offset 1 ms before
+		offSet1 != offSet2 ? dst = 1 : dst = 0;
+
+
+		var gmtHours = -d.getTimezoneOffset()/60;
+		if(dst==1){
+			gmtHours--;
+		}
+
+		//var gmtHours = -d.stdTimezoneOffset()/60;
+		//document.write("The local time zone is: GMT " + gmtHours);
+
+		SetCookie("BLCtimezone",gmtHours,30);
+
+		function SetCookie(cookieName,cookieValue,nDays) {
+		 var today = new Date();
+		 var expire = new Date();
+		 if (nDays==null || nDays==0) nDays=1;
+		 expire.setTime(today.getTime() + 3600000*24*nDays);
+		 document.cookie = cookieName+"="+escape(cookieValue)+ ";secure;expires="+expire.toGMTString();
+		}
+
+
+
+		
+	</script>
+
+
+
+	
+
+    <!-- Add jQuery library -->
+    
+
+
+
+
+	
+  
+  <script type="text/javascript" src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/jquery-3.3.1.min.js.download"></script>
+
+
+    <!-- Add fancyBox main JS and CSS files -->
+    <link rel="stylesheet" type="text/css" href="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/jquery.fancybox.css" media="screen">
+	<script type="text/javascript" src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/jquery.fancybox.min.js.download"></script>
+
+
+    <script type="text/javascript">
+
+
+
+		  /*
+
+
+		$(document).ready(function() {
+            $(".fancybox").fancybox();
+
+            $('.fancybox-iframe').fancybox({
+                    width : 800, height: 600, minHeight: 300, maxHeight: 600
+            });
+
+
+			$('.fancybox-complete').fancybox({
+                    width : 800, height: 620, minHeight: 400, maxHeight: 620
+            });
+
+
+        });
+		*/
+    </script>
+
+
+    
+
+	<script src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/h5p-resizer.js.download" charset="UTF-8"></script>
+	
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    
+    <script async="" src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-112661820-1');
+    </script>
+
+
+
+
+
+
+<!-- Hotjar Tracking Code for https://www.elephango.com/ -->
+
+
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window,document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	 fbq('init', '825196244679416'); 
+	fbq('track', 'PageView');
+	</script>
+	<noscript>
+	 <img height="1" width="1" 
+	src="https://www.facebook.com/tr?id=825196244679416&ev=PageView
+	&noscript=1"/>
+	</noscript>
+	<!-- End Facebook Pixel Code -->
+
+
+
+<script type="text/javascript" src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/html2canvas.js.download"></script><link rel="stylesheet" type="text/css" href="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/freshwidget.css"></head>
+
+
+
+	<body class="expansion-alids-init"><div class="freshwidget-container responsive" id="FreshWidget" data-html2canvas-ignore="true" style="display: none;"><div class="widget-ovelay" id="freshwidget-overlay">&nbsp;</div><div class="freshwidget-dialog" id="freshwidget-dialog"><div id="freshwidget-close" class="widget-close"></div><div class="mobile-widget-close" id="mobile-widget-close"></div><div class="mobile-widget-arrow" id="mobile-widget-arrow"></div> <div class="frame-container">   </div><iframe title="Feedback Form" id="freshwidget-frame" src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/loading.html" frameborder="0" scrolling="auto" allowtransparency="true" style="height: 500px"> </div></div></iframe></div></div><div id="freshwidget-button" data-html2canvas-ignore="true" class="freshwidget-button fd-btn-right" style="display: none; top: 385px;"><a href="javascript:void(0)" class="freshwidget-theme" style="color: white; background-color: rgb(15, 187, 124); border-color: white;">Support</a></div>
+
+       <ul class="navbar-side mobile-nav">
+			<li class="navbar-side-item">
+				<a href="https://dev.elephango.com/index.cfm/pg/home" class="side-link">Home</a>
+			</li>
+			<li class="navbar-side-item">
+				<a href="https://dev.elephango.com/index.cfm/pg/favorites" class="side-link">Favorites</a>
+			</li>
+			<li class="navbar-side-item">
+				<a href="https://dev.elephango.com/index.cfm/pg/discover" class="side-link">Discover</a>
+			</li>
+			<li class="navbar-side-item">
+				<a href="https://dev.elephango.com/index.cfm/pg/badges" class="side-link">Badges</a>
+			</li>
+			<li class="navbar-side-item">
+				<a href="https://dev.elephango.com/index.cfm/pg/jumpstart" class="side-link">Jumpstart</a>
+			</li>
+			<li class="navbar-side-item">
+				<a href="https://dev.elephango.com/index.cfm/pg/achievements" class="side-link">Achievements</a>
+			</li>
+
+			<li class="navbar-side-item">
+				<a class="side-link" href="https://dev.elephango.com/index.cfm/pg/myaccount/s/settings">My Account</a>
+			</li>
+			
+
+			<li class="navbar-side-item">
+				<a class="side-link" href="https://dev.elephango.com/index.cfm/pg/login">Sign Out</a>
+			</li>
+    	</ul>
+    
+    <div class="overlay"></div>
+
+
+	
+
+
+	
+
+
+				<div class="w-100 TopbarDark">
+					<div class="container">
+						<div class="white" style="display: inline-block; float:left; color:white">
+							<strong>EDUCATOR DASHBOARD</strong>
+						</div>
+
+						<nav class="d-flex justify-content-end">
+							<ul class="list-unstyled list-inline left mb-0 align-self-center">
+								<li class="list-inline-item nav-item"><a class="nav-btn" href="https://dev.elephango.com/index.cfm/pg/educatorManager"><strong>Educator Manager</strong></a></li>
+								
+								<li class="list-inline-item nav-item"><a class="nav-btn data-fancybox-suggest" data-fancybox="iframe" data-type="iframe" href="javascript:;" onclick="gtag(&#39;event&#39;, &#39;Suggest a Lesson&#39;, {&#39;event_category&#39;:&#39;Top Menu Button&#39;,&#39;event_label&#39;:&#39;educatorManager&#39;});" data-src="https://dev.elephango.com/pages/member/dsp_suggest.cfm">Suggest a Lesson!</a></li>
+								
+								<li class="list-inline-item nav-item"><a class="nav-btn" href="http://helpcenter.elephango.com/" target="_blank">Support</a></li>
+							</ul>
+
+
+							<div class="delimiter align-self-center"></div>
+							<ul class="list-unstyled list-inline right mb-0 align-self-center">
+								
+								<li class="list-inline-item nav-item">
+									<a class="nav-btn profile dropdown-toggle" href="https://dev.elephango.com/#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										
+											<img src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/4160786_20181018_092705.jpg" class="img-fluid profile mr-1">
+										Test Educator 
+										
+									</a>
+
+
+									 <div class="dropdown-menu">
+										
+										<a class="dropdown-item" href="https://dev.elephango.com/index.cfm/pg/myaccount/s/settings">My Account</a>
+										
+										<div role="separator" class="dropdown-divider"></div>
+										<a class="dropdown-item" href="https://dev.elephango.com/index.cfm/pg/login">Sign Out</a>
+										
+									</div>
+								</li>
+							</ul>
+
+
+						</nav>
+					</div>
+				</div>
+
+
+			
+
+		<div class="container Header py-4">
+			<div class="d-flex flex-wrap justify-content-between">
+				
+						<a class="d-inline logo-container align-self-center" href="https://dev.elephango.com/index.cfm/pg/home">
+							<img class="img-fluid logo" src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/logo.png">
+						</a>
+					
+				<button class="navbar-toggler mobile-btn" type="button">☰</button>
+				<nav class="nav-container d-flex align-self-center">
+						
+
+				</nav>
+				
+						<div style="float:right; display: inline-block; margin-top: 25px;">
+                        <div class="darkorangebuttonLink" style="text-transform:capitalize;padding: 6px 12px;" onclick="javascript:location.href=&#39;https://dev.elephango.com/index.cfm/pg/home/&#39;"><i class="fas fa-chevron-right"></i> Back to Elephango</div>
+                        
+                        </div>
+					
+			 </div>
+		</div>
+	
+
+
+
+<div class="container Body">
+	<div class="box-section">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="border-line mb-1" style="padding: 9px 0 4px 0;">
+					<h4 class="h4-title mb-3" style="font-size: 20px;">Educator Manager</h4>
+				</div>
+				<div style="background-color: #FAFAFA; padding-bottom: 50px;">
+					<div class="menuOrange">
+						<a href="https://dev.elephango.com/index.cfm/pg/educatorManager/s/overview">
+							<img style="vertical-align:middle; height: 16px; margin-right: 4px;" src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/dashboard.png">
+							Educator Home
+						</a>
+					</div>
+					<div class="menuOrangeOn">
+						<a href="https://dev.elephango.com/index.cfm/pg/educatorManager/s/students">
+							<img style="vertical-align:middle; height: 16px; margin-right: 4px;" src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/student.png">
+							Students
+						</a>
+					</div>
+					
+						<div class="menuOrange">
+							<a href="https://dev.elephango.com/index.cfm/pg/educatorManager/s/studentgroups">
+								<img style="vertical-align:middle; height: 16px; margin-right: 4px;" src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/groups.png">
+								Student Groups
+							</a>
+						</div>
+					
+					
+					<div class="menuOrange">
+						<a href="http://help.elephango.com/" target="_blank">
+							<img style="vertical-align:middle; height: 16px; margin-right: 4px;" src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/help-support.png">
+							Support Help
+						</a>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+			<div class="col-md-10">
+				
+				
+
+
+<script src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/chkbox.js.download"></script>
+<script language="JavaScript">
+
+	
+	
+	function HideContent(d) {
+	document.getElementById(d).style.display = "none";
+	}
+	function ShowContent(d) {
+	document.getElementById(d).style.display = "block";
+	}
+	
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<div class="border-line  mb-1">
+	<div class="row">
+		<div class="col-md-12">
+			<h4 class="h4-title mb-3" style="font-size: 32px; display: inline-block">
+				Student: 
+				<strong>eTest Student</strong>
+			</h4>
+			<div class="float-right">
+                <a href="#" class="cta-yellow"><i class="fas fa-list-ul mr-2"></i>ADD LESSONS</a>
+            </div>
+		</div>
+	</div>
+	
+</div>
+
+
+
+
+<div class="mt-1">
+	<div style="display: flex; padding: 0 0 18px 0; font-size: 15px;">
+
+		<div style="flex:1; text-align: left">
+			<a href="https://dev.elephango.com/index.cfm/pg/educatorManager/s/students">Students</a> &gt; 
+			eTest Student
+		</div>
+
+
+	</div>
+
+	
+	
+	<div class="row">
+		<div class="col-md-2">
+			<img src="imgs/girl.png" class="img-fluid">
+		</div>
+		<div class="col-md-10">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="orangeLeft box-gray">
+						<strong class="font-size-15"># of Assigned Lessons</strong>
+						<div class="mt-4">
+							<div class="font-size-24">3</div>		
+						</div>
+					</div>
+				</div>
+		
+				<div class="col-md-3">
+					<div class="orangeLeft box-gray">
+						<strong class="font-size-15"># of Student Choice</strong>
+						<div class="mt-4">
+							<div class="font-size-24">9</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="orangeLeft box-gray">
+						<strong class="font-size-15"># of Lessons Completed</strong>
+						<div class="mt-4">
+							<div class="font-size-24">246</div>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3">
+					<div class="orangeLeft box-gray">
+						<strong class="font-size-15"># of Assigned Lessons Incomplete</strong>
+						<div class="mt-4">
+							<div class="font-size-24">9</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+	</div>
+</div>
+
+<div class="row mt-3">
+	<div class="col-md-12">
+
+		<ul class="nav students-nav mb-4">
+			<li class="nav-item">
+			  <a class="nav-link active" href="#">Lessons</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Badges</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Student Logs</a>
+			  </li>
+		  </ul>
+	
+
+          <table class="w-100 table educator-table">
+              <tbody>
+                  <tr>
+                    <td>
+						<div class="ellipsis">
+						<div class="row-value">
+								<a href="#" data-target="#collapsedRow1,#collapsedRow11" class="cta-td expandable-row" data-toggle="collapse" aria-expanded="false" aria-controls="collapsedRow1,collapsedRow"><i class="fas"></i>First Time Fractions fads fdas fasd fasdf asdf asdf</a>
+					</div>
+						</div>
+                    </td>
+                    <td>
+						<div class="ellipsis">
+							<div class="row-value">Demo Educator 1fddasf asdf asdfasd</div>
+							<div class="row-title">Assigned By</div>
+						</div>
+                    </td>
+                    <td>
+						<div class="ellipsis"></div>
+                        <div class="row-value"><a href="##">View</a></div>
+                        <div class="row-title">Feedback</div>
+					</div>
+                    </td>
+                    <td>
+						<div class="ellipsis"></div>
+                        <div class="row-value">20</div>
+                        <div class="row-title">Completed</div>
+					</div>
+                    </td>
+                    <td>
+						<div class="ellipsis"></div>
+                        <div class="row-value">16</div>
+                        <div class="row-title">In-Complete</div>
+					</div>
+                    </td>
+                    <td>
+						<div class="ellipsis"></div>
+                        <div class="row-value">6/1/2018</div>
+                        <div class="row-title">Completed Date</div>
+					</div>
+                    </td>
+                    <td>
+						<div class="ellipsis"></div>
+                        <div class="row-value">Active</div>
+                        <div class="row-title">Status</div>
+					</div>
+                    </td>
+                    <td>
+						<div class="ellipsis">
+                        <a class="row-icon mr-1" href="https://dev.elephango.com/index.cfm/pg/resource/lcid/10173" target="_blank" title="View Resource"><i class="fas fa-external-link-alt"></i></a>
+                        <a class="row-icon" href="https://dev.elephango.com/index.cfm/pg/resource/lcid/10173" target="_blank" title="View Resource"><i class="fas fa-trash"></i></a>
+					</div>
+					</td>
+                  </tr>
+                  <tr class="collapse child" id="collapsedRow1">
+                    <td><div class="row-value pl-3">Ancient Pyramids</div></td>
+                    <td></td>
+                    <td>
+                        <div class="row-value"><a href="##">View</a></div>
+                        <div class="row-title">Feedback</div>
+                    </td>
+                    <td>
+                        <div class="row-value">16</div>
+                        <div class="row-title">Completed </div>
+                    </td>
+                    <td>
+                        <div class="row-value">16</div>
+                        <div class="row-title">In-Complete</div>
+                    </td>
+                    <td>
+                        <div class="row-value">6/1/2018</div>
+                        <div class="row-title">Completed Date</div>
+                    </td>
+                    <td>
+                        <div class="row-value">Active</div>
+                        <div class="row-title">Status</div>
+                    </td>
+                    <td>
+                        <a class="row-icon mr-1" href="#" target="_blank" title="View Resource"><i class="fas fa-external-link-alt"></i></a>
+                    </td>
+				  </tr>
+				  <tr class="collapse child" id="collapsedRow11">
+                    <td><div class="row-value pl-3">Ancient Pyramids</div></td>
+                    <td></td>
+                    <td>
+                        <div class="row-value"><a href="##">View</a></div>
+                        <div class="row-title">Feedback</div>
+                    </td>
+                    <td>
+                        <div class="row-value">16</div>
+                        <div class="row-title">Completed </div>
+                    </td>
+                    <td>
+                        <div class="row-value">16</div>
+                        <div class="row-title">In-Complete</div>
+                    </td>
+                    <td>
+                        <div class="row-value">6/1/2018</div>
+                        <div class="row-title">Completed Date</div>
+                    </td>
+                    <td>
+                        <div class="row-value">Active</div>
+                        <div class="row-title">Status</div>
+                    </td>
+                    <td>
+                        <a class="row-icon mr-1" href="#" target="_blank" title="View Resource"><i class="fas fa-external-link-alt"></i></a>
+                    </td>
+                  </tr>
+                  
+              </tbody>
+          </table>
+
+
+
+	</div>
+</div>
+
+
+
+
+  <script type="text/javascript">
+
+
+
+		$('.data-fancybox-schoolcode').fancybox({
+			  type: 'iframe',
+			  padding : 0,
+			  buttons : [
+				'close'
+			  ],
+			  toolbar  : false,
+			  smallBtn : true,
+			  iframe : {
+				css : {
+					width : '640px'
+				},
+			}
+		});
+		
+		
+		$('.data-fancybox-schoolEdit').fancybox({
+			  type: 'iframe',
+			  padding : 0,
+			  buttons : [
+				'close'
+			  ],
+			  toolbar  : false,
+			  smallBtn : true,
+			  iframe : {
+				css : {
+					width : '800px'
+				},
+			}
+		});
+		
+		
+		$('.data-fancybox-image').fancybox({
+			  type: 'iframe',
+			  padding : 0,
+			  buttons : [
+				'close'
+			  ],
+			  toolbar  : false,
+			  smallBtn : true,
+			  iframe : {
+				css : {
+					width : '550px'
+				},
+			}
+		});
+		
+		
+		$('.data-fancybox-edu').fancybox({
+			  type: 'iframe',
+			  padding : 0,
+			  buttons : [
+				'close'
+			  ],
+			  toolbar  : false,
+			  smallBtn : true,
+			  iframe : {
+				css : {
+					width : '800px'
+				},
+			}
+		});
+		
+		$('.data-fancybox-feedback').fancybox({
+			  type: 'iframe',
+			  padding : 0,
+			  buttons : [
+				'close'
+			  ],
+			  toolbar  : false,
+			  smallBtn : true,
+			  iframe : {
+				css : {
+					width : '450px'
+				},
+			}
+		});
+		
+		
+		
+		$('.data-fancybox-achieve').fancybox({
+			  type: 'iframe',
+			  padding : 0,
+			  buttons : [
+				'close'
+			  ],
+			  toolbar  : false,
+			  smallBtn : true,
+			  iframe : {
+				css : {
+					width : '1050px'
+				},
+			}
+		});
+
+		
+		
+		
+
+
+		var fancy = $.fancybox;
+		window.addEventListener("message", function(event) {
+			if(event.data == 'reload') {
+				
+				//location.href='http://dev.elephango.com/index.cfm/pg/resource/lcid/12963/c/1';
+				
+				//fancy.close();
+			}
+		});
+
+</script>
+
+
+
+
+<div class="borderLogin" style="margin-top: 20px;"></div>
+<div class="pt-2">
+	<div class="mb-2" style="text-align: center">
+		<a class="text-muted" href="https://dev.elephango.com/terms" target="_blank"><small><u>Terms &amp; Conditions</u></small></a> |
+        <a class="text-muted" href="https://dev.elephango.com/index.cfm/pg/PrivacyPolicy" target="_blank"><small><u>Privacy Policy</u></small></a> |
+        <a class="text-muted" href="https://dev.elephango.com/acceptible-use-policy" target="_blank"><small><u>Acceptable Use Policy</u></small></a>
+	</div>
+	<div style="text-align: center">
+		<small class="text-muted">Copyright 2021 © Elephango. All rights reserved.</small>
+	</div>
+</div>
+
+
+
+
+    <script src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/popper.min.js.download"></script>
+    <script src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/bootstrap.min.js.download"></script>
+	<script src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/script.v2.js.download"></script>
+	
+		<script src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/script.js.download"></script>
+	
+
+    <script>
+		var refTagger = {
+			settings: {
+				bibleVersion: "ESV",
+				roundCorners: true,
+				socialSharing: []
+			}
+		};
+		(function(d, t) {
+			var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+			g.src = "//api.reftagger.com/v2/RefTagger.js";
+			s.parentNode.insertBefore(g, s);
+		}(document, "script"));
+	</script>
+
+	<!-- Start of LiveChat (www.livechatinc.com) code -->
+	
+
+
+	<script type="text/javascript">
+
+		$('.data-fancybox-suggest').fancybox({
+			  buttons : [
+				'close'
+			  ],
+			  toolbar  : false,
+			  smallBtn : true,
+			  iframe : {
+				css : {
+					width : '600px'
+				},
+			}
+		});
+
+		$('.data-fancybox-contactUs').fancybox({
+			  buttons : [
+				'close'
+			  ],
+			  toolbar  : false,
+			  smallBtn : true,
+			  iframe : {
+				css : {
+					width : '450px'
+				},
+			}
+		});
+
+	</script>
+
+
+
+	<script type="text/javascript" src="./Elephango Educational Resources K12 Learning, Lesson Plans, Activities, Experiments, Homeschool Help_files/freshwidget.js.download"></script>
+	<script type="text/javascript">
+			FreshWidget.init("", {"queryString": "&widgetType=popup&submitTitle=Submit+Request", "utf8": "âœ“", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "white", "buttonBg": "#0fbb7c", "alignment": "2", "offset": "385px", "formHeight": "500px", "url": "https://helpcenter.elephango.com"} );
+	</script>
+
+
+
+
+
+<websiteip id="chrome_websiteIP" class="chrome_websiteIP_right">131.153.100.94</websiteip></body></html>

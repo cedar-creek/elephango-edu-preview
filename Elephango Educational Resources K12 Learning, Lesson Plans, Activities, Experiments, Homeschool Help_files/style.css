@@ -2249,6 +2249,23 @@ margin:0 0 2px 2px;
 .row-value, .row-value i {
     font-weight: bold;
 }
+.ellipsis {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.row-value {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+td:before {
+    content: '&nbsp;';
+    visibility: hidden;
+}
+td {
+    position: relative;
+}
 .row-title {
     color: #b4b7be;
     font-size: 12px;
